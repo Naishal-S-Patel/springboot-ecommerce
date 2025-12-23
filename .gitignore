@@ -1,0 +1,47 @@
+# Root-level ignores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.iml
+*.iws
+*.ipr
+*.class
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Frontend (Vite/Node)
+ecom-frontend/node_modules/
+ecom-frontend/dist/
+ecom-frontend/dist-ssr/
+ecom-frontend/.parcel-cache/
+ecom-frontend/.npm/
+ecom-frontend/.yarn/
+ecom-frontend/.pnpm-store/
+ecom-frontend/.env
+ecom-frontend/.env.*
+
+# Backend (Spring Boot/Maven)
+sb-ecom/target/
+sb-ecom/.mvn/wrapper/maven-wrapper.jar
+sb-ecom/.classpath
+sb-ecom/.project
+sb-ecom/.settings/
+sb-ecom/.apt_generated
+sb-ecom/.sts4-cache
+sb-ecom/build/
+
+# IDE/Tooling
+nbproject/
+
+# Sensitive configs (keep local only)
+sb-ecom/src/main/resources/application.properties
+sb-ecom/src/main/resources/application-*.properties
+sb-ecom/src/main/resources/*.yml
+.env
+.env.*
