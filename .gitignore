@@ -35,6 +35,7 @@ sb-ecom/.settings/
 sb-ecom/.apt_generated
 sb-ecom/.sts4-cache
 sb-ecom/build/
+sb-ecom/images/
 
 # IDE/Tooling
 nbproject/
