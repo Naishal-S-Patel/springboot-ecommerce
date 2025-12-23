@@ -1,12 +1,17 @@
 # springboot-ecommerce
 
-Full-stack e-commerce project pairing a React/Vite storefront & admin UI with a Spring Boot API (PostgreSQL, JWT auth, Stripe payments).
+Full-stack e-commerce platform: React/Vite storefront & admin UI backed by a Spring Boot API with JWT auth, role-based access (user, seller, admin), PostgreSQL, and Stripe payments.
 
 ## What this project is about
-- Modern React frontend (Vite) for shopping experience and admin management
-- Spring Boot backend with secure JWT-based auth and role-based access
-- PostgreSQL persistence and Stripe integration for payments
+- Modern React frontend (Vite) for shopping and admin dashboards
+- Spring Boot backend with secure JWT auth and RBAC
+- PostgreSQL persistence and Stripe integration
 - Example config provided; real secrets stay local and ignored
+
+## Roles and capabilities
+- Shopper (ROLE_USER): browse/search products, view product detail, manage cart, checkout, add addresses, pay via Stripe, view orders.
+- Seller (ROLE_SELLER): add/update products, manage inventory, view seller orders.
+- Admin (ROLE_ADMIN): manage categories, products, orders, users/sellers, and view analytics dashboard.
 
 ## Structure
 - [ecom-frontend](ecom-frontend): React + Vite storefront/admin UI.
